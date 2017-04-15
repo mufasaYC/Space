@@ -94,28 +94,48 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="VDC-tw-gsE" firstAttribute="centerX" secondItem="Uav-am-Iwv" secondAttribute="centerX" id="9rH-yX-Tnm"/>
+                                    <constraint firstAttribute="height" constant="44" id="bYg-LK-poK"/>
                                     <constraint firstItem="VDC-tw-gsE" firstAttribute="centerY" secondItem="Uav-am-Iwv" secondAttribute="centerY" id="gYt-xW-K0p"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="186" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="er4-gz-6U6">
+                                <rect key="frame" x="0.0" y="623" width="375" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="44" id="Rr0-32-0O0">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rr0-32-0O0" id="Fga-Rc-GqP">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Uav-am-Iwv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5zN-cM-WUS"/>
+                            <constraint firstItem="Uav-am-Iwv" firstAttribute="top" secondItem="eKF-4n-kQc" secondAttribute="bottom" id="AW2-Fw-bAH"/>
                             <constraint firstAttribute="trailing" secondItem="zIW-b0-buT" secondAttribute="trailing" id="FRL-bp-E2O"/>
                             <constraint firstItem="zIW-b0-buT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RAP-of-kYd"/>
+                            <constraint firstItem="er4-gz-6U6" firstAttribute="top" secondItem="eKF-4n-kQc" secondAttribute="bottom" id="RQ4-d1-bN5"/>
                             <constraint firstItem="eKF-4n-kQc" firstAttribute="top" secondItem="zIW-b0-buT" secondAttribute="bottom" id="S1S-I0-dHa"/>
                             <constraint firstAttribute="trailing" secondItem="Uav-am-Iwv" secondAttribute="trailing" id="SDd-OH-ggd"/>
+                            <constraint firstItem="Uav-am-Iwv" firstAttribute="top" secondItem="er4-gz-6U6" secondAttribute="bottom" id="SsT-vT-yoU"/>
                             <constraint firstAttribute="trailing" secondItem="eKF-4n-kQc" secondAttribute="trailing" id="UkE-N1-oMf"/>
+                            <constraint firstItem="er4-gz-6U6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XRs-2a-5jE"/>
                             <constraint firstItem="eKF-4n-kQc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gMW-AH-adU"/>
-                            <constraint firstItem="Uav-am-Iwv" firstAttribute="top" secondItem="eKF-4n-kQc" secondAttribute="bottom" id="jbr-3l-UuE"/>
                             <constraint firstItem="zIW-b0-buT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kXh-dj-6zD"/>
                             <constraint firstAttribute="bottom" secondItem="Uav-am-Iwv" secondAttribute="bottom" id="mja-MU-1PW"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eKF-4n-kQc" secondAttribute="bottom" constant="44" id="sF5-fQ-AO5"/>
+                            <constraint firstAttribute="trailing" secondItem="er4-gz-6U6" secondAttribute="trailing" id="yS2-ZK-ua4"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bodyCarouselView" destination="eKF-4n-kQc" id="98p-p0-M2f"/>
+                        <outlet property="bottomConstraint" destination="AW2-Fw-bAH" id="0rq-V8-WIK"/>
                         <outlet property="pageControl" destination="VDC-tw-gsE" id="uEd-Pf-Hxb"/>
+                        <outlet property="tableView" destination="er4-gz-6U6" id="z8k-gy-0I7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
