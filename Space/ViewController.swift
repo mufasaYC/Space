@@ -23,14 +23,6 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource {
 		bodyCarouselView.reloadData()
 		bodyCarouselView.bounces = false
 		bodyCarouselView.isPagingEnabled = true
-		
-		headerCarouselView.delegate = self
-		headerCarouselView.dataSource = self
-		headerCarouselView.type = .linear
-		headerCarouselView.reloadData()
-		headerCarouselView.isScrollEnabled = false
-		headerCarouselView.isPagingEnabled = true
-		
 		pageControl.numberOfPages = 10
 		
 	}
@@ -40,27 +32,10 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource {
 	}
 	
 	func carouselCurrentItemIndexDidChange(_ carousel: iCarousel) {
-		headerCarouselView.scrollToItem(at: bodyCarouselView.currentItemIndex, animated: true)
 		pageControl.currentPage = bodyCarouselView.currentItemIndex
 	}
 	
 	func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
-		
-		if carousel == headerCarouselView {
-			var itemView: UITextView
-			if (view == nil) {
-				itemView = UITextView(frame: CGRect(x:0, y:0, width: headerCarouselView.bounds.width, height: headerCarouselView.bounds.height))
-				itemView.text = "Cardio"
-			} else {
-				itemView = view! as! UITextView
-				itemView.text = "Cardio"
-			}
-			itemView.font = UIFont(name: "SF UI Display Regular", size: 21)
-			itemView.isEditable = false
-			itemView.isSelectable = false
-			return itemView
-		}
-		
 		
 		var itemView: CustomView
 		if (view == nil) {
