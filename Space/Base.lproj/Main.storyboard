@@ -43,44 +43,43 @@
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5A-F3-pbp" customClass="iCarousel">
-                                        <rect key="frame" x="0.0" y="67" width="375" height="43"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="egF-1B-0cI">
-                                        <rect key="frame" x="294" y="29" width="69" height="30.5"/>
+                                        <rect key="frame" x="305" y="32" width="58" height="25"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcd-cu-hss">
-                                                <rect key="frame" x="0.0" y="0.0" width="30.5" height="30.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Tcd-cu-hss" secondAttribute="height" multiplier="1:1" id="G2J-1Z-PsK"/>
                                                 </constraints>
                                                 <state key="normal" backgroundImage="Info"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hm2-G6-ZQH">
-                                                <rect key="frame" x="38.5" y="0.0" width="30.5" height="30.5"/>
+                                                <rect key="frame" x="33" y="0.0" width="25" height="25"/>
                                                 <state key="normal" backgroundImage="Profile"/>
                                             </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="2PA-gM-ZfB"/>
                                             <constraint firstItem="hm2-G6-ZQH" firstAttribute="height" secondItem="Tcd-cu-hss" secondAttribute="height" id="CDW-sI-gmq"/>
                                             <constraint firstItem="hm2-G6-ZQH" firstAttribute="width" secondItem="Tcd-cu-hss" secondAttribute="width" id="WT1-HE-Ojk"/>
                                         </constraints>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cardio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ig-1K-mVA">
+                                        <rect key="frame" x="12" y="70.5" width="65.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="15a-dl-S8R"/>
                                     <constraint firstItem="zqf-ET-0Tc" firstAttribute="leading" secondItem="zIW-b0-buT" secondAttribute="leading" constant="12" id="1Ka-5W-3Er"/>
-                                    <constraint firstItem="egF-1B-0cI" firstAttribute="top" secondItem="zIW-b0-buT" secondAttribute="top" constant="29" id="5Ju-Tm-SyS"/>
-                                    <constraint firstItem="L5A-F3-pbp" firstAttribute="top" secondItem="egF-1B-0cI" secondAttribute="bottom" constant="8" id="KSj-zN-0BG"/>
-                                    <constraint firstAttribute="bottom" secondItem="L5A-F3-pbp" secondAttribute="bottom" id="Umv-dR-bJp"/>
+                                    <constraint firstAttribute="bottom" secondItem="2Ig-1K-mVA" secondAttribute="bottom" constant="12" id="Ztu-J8-Ens"/>
                                     <constraint firstItem="egF-1B-0cI" firstAttribute="centerY" secondItem="zqf-ET-0Tc" secondAttribute="centerY" id="aoN-HD-HWc"/>
-                                    <constraint firstAttribute="trailing" secondItem="L5A-F3-pbp" secondAttribute="trailing" id="cAa-Yo-9Qi"/>
                                     <constraint firstAttribute="trailing" secondItem="egF-1B-0cI" secondAttribute="trailing" constant="12" id="et4-Qb-GN3"/>
                                     <constraint firstItem="zqf-ET-0Tc" firstAttribute="top" secondItem="zIW-b0-buT" secondAttribute="top" constant="29" id="plu-oB-auF"/>
-                                    <constraint firstItem="L5A-F3-pbp" firstAttribute="leading" secondItem="zIW-b0-buT" secondAttribute="leading" id="uDY-53-t1W"/>
-                                    <constraint firstItem="L5A-F3-pbp" firstAttribute="top" secondItem="zqf-ET-0Tc" secondAttribute="bottom" constant="8" id="uNr-7n-kss"/>
+                                    <constraint firstItem="2Ig-1K-mVA" firstAttribute="leading" secondItem="zIW-b0-buT" secondAttribute="leading" constant="12" id="xEW-eO-wl5"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uav-am-Iwv">
@@ -116,7 +115,7 @@
                     </view>
                     <connections>
                         <outlet property="bodyCarouselView" destination="eKF-4n-kQc" id="98p-p0-M2f"/>
-                        <outlet property="headerCarouselView" destination="L5A-F3-pbp" id="XvB-qZ-YtQ"/>
+                        <outlet property="pageControl" destination="VDC-tw-gsE" id="uEd-Pf-Hxb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

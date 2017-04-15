@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource {
 
+	@IBOutlet weak var pageControl: UIPageControl!
 	@IBOutlet weak var bodyCarouselView: iCarousel!
 	@IBOutlet weak var headerCarouselView: iCarousel!
 	override func viewDidLoad() {
@@ -21,18 +22,26 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource {
 		bodyCarouselView.type = .linear
 		bodyCarouselView.reloadData()
 		bodyCarouselView.bounces = false
-		bodyCarouselView.scrollSpeed = 0.7
+		bodyCarouselView.isPagingEnabled = true
 		
 		headerCarouselView.delegate = self
 		headerCarouselView.dataSource = self
 		headerCarouselView.type = .linear
 		headerCarouselView.reloadData()
-		headerCarouselView.bounces = false
+		headerCarouselView.isScrollEnabled = false
+		headerCarouselView.isPagingEnabled = true
+		
+		pageControl.numberOfPages = 10
 		
 	}
 
 	func numberOfItems(in carousel: iCarousel) -> Int {
 		return 10
+	}
+	
+	func carouselCurrentItemIndexDidChange(_ carousel: iCarousel) {
+		headerCarouselView.scrollToItem(at: bodyCarouselView.currentItemIndex, animated: true)
+		pageControl.currentPage = bodyCarouselView.currentItemIndex
 	}
 	
 	func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
@@ -46,7 +55,7 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource {
 				itemView = view! as! UITextView
 				itemView.text = "Cardio"
 			}
-			itemView.font = UIFont(name: "SF-UI-Display-Regular", size: 21)
+			itemView.font = UIFont(name: "SF UI Display Regular", size: 21)
 			itemView.isEditable = false
 			itemView.isSelectable = false
 			return itemView
