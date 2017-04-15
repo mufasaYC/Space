@@ -13,6 +13,13 @@
 		0707E65C1EA2759900402370 /* Space.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0707E65A1EA2759900402370 /* Space.xcdatamodeld */; };
 		0707E65E1EA2759900402370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0707E65D1EA2759900402370 /* Assets.xcassets */; };
 		0707E6611EA2759900402370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0707E65F1EA2759900402370 /* LaunchScreen.storyboard */; };
+		07A4C6011EA279B9000A7059 /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07A4C5FD1EA279A0000A7059 /* SF-UI-Display-Medium.otf */; };
+		07A4C6021EA279B9000A7059 /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07A4C5FE1EA279A0000A7059 /* SF-UI-Display-Regular.otf */; };
+		07A4C6031EA279B9000A7059 /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07A4C5FF1EA279A0000A7059 /* SF-UI-Display-Thin.otf */; };
+		07A4C6071EA283F5000A7059 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A4C6061EA283F5000A7059 /* iCarousel.m */; };
+		07A4C60C1EA28571000A7059 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A4C60A1EA28571000A7059 /* CustomView.xib */; };
+		07A4C60E1EA28587000A7059 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A4C60D1EA28587000A7059 /* CustomView.swift */; };
+		DAF5CAB53244AEAC2FEE2931 /* Pods_Space.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B01033259B8DA3CA41877BD /* Pods_Space.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,17 @@
 		0707E65D1EA2759900402370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0707E6601EA2759900402370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0707E6621EA2759900402370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07A4C5FD1EA279A0000A7059 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
+		07A4C5FE1EA279A0000A7059 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
+		07A4C5FF1EA279A0000A7059 /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Thin.otf"; sourceTree = "<group>"; };
+		07A4C6041EA283F4000A7059 /* Space-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Space-Bridging-Header.h"; sourceTree = "<group>"; };
+		07A4C6051EA283F5000A7059 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		07A4C6061EA283F5000A7059 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		07A4C60A1EA28571000A7059 /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		07A4C60D1EA28587000A7059 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		43438DC4020716C1B1045A19 /* Pods-Space.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Space/Pods-Space.debug.xcconfig"; sourceTree = "<group>"; };
+		6204A2442751D9ED9F92ED76 /* Pods-Space.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space.release.xcconfig"; path = "Pods/Target Support Files/Pods-Space/Pods-Space.release.xcconfig"; sourceTree = "<group>"; };
+		7B01033259B8DA3CA41877BD /* Pods_Space.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Space.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF5CAB53244AEAC2FEE2931 /* Pods_Space.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +61,8 @@
 			children = (
 				0707E6521EA2759900402370 /* Space */,
 				0707E6511EA2759900402370 /* Products */,
+				1372397079EA08B6B0AAB91A /* Pods */,
+				6283F5041AD0256AAB6ED745 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +84,49 @@
 				0707E65F1EA2759900402370 /* LaunchScreen.storyboard */,
 				0707E6621EA2759900402370 /* Info.plist */,
 				0707E65A1EA2759900402370 /* Space.xcdatamodeld */,
+				07A4C6081EA283FA000A7059 /* iCarousel */,
+				07A4C6001EA279A5000A7059 /* Fonts */,
+				07A4C60A1EA28571000A7059 /* CustomView.xib */,
+				07A4C60D1EA28587000A7059 /* CustomView.swift */,
 			);
 			path = Space;
+			sourceTree = "<group>";
+		};
+		07A4C6001EA279A5000A7059 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				07A4C5FD1EA279A0000A7059 /* SF-UI-Display-Medium.otf */,
+				07A4C5FE1EA279A0000A7059 /* SF-UI-Display-Regular.otf */,
+				07A4C5FF1EA279A0000A7059 /* SF-UI-Display-Thin.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		07A4C6081EA283FA000A7059 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				07A4C6051EA283F5000A7059 /* iCarousel.h */,
+				07A4C6061EA283F5000A7059 /* iCarousel.m */,
+				07A4C6041EA283F4000A7059 /* Space-Bridging-Header.h */,
+			);
+			name = iCarousel;
+			sourceTree = "<group>";
+		};
+		1372397079EA08B6B0AAB91A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43438DC4020716C1B1045A19 /* Pods-Space.debug.xcconfig */,
+				6204A2442751D9ED9F92ED76 /* Pods-Space.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6283F5041AD0256AAB6ED745 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B01033259B8DA3CA41877BD /* Pods_Space.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0707E6651EA2759900402370 /* Build configuration list for PBXNativeTarget "Space" */;
 			buildPhases = (
+				D52287E70E7D5C998966E7E6 /* [CP] Check Pods Manifest.lock */,
 				0707E64C1EA2759900402370 /* Sources */,
 				0707E64D1EA2759900402370 /* Frameworks */,
 				0707E64E1EA2759900402370 /* Resources */,
+				F1BF6A3AF939071B2C8D0A3A /* [CP] Embed Pods Frameworks */,
+				B374A7DCAEB8E6DFD5E44113 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -100,6 +165,7 @@
 					0707E64F1EA2759900402370 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 6B89WP5H2R;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,20 +193,74 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A4C6011EA279B9000A7059 /* SF-UI-Display-Medium.otf in Resources */,
+				07A4C6021EA279B9000A7059 /* SF-UI-Display-Regular.otf in Resources */,
+				07A4C6031EA279B9000A7059 /* SF-UI-Display-Thin.otf in Resources */,
 				0707E6611EA2759900402370 /* LaunchScreen.storyboard in Resources */,
 				0707E65E1EA2759900402370 /* Assets.xcassets in Resources */,
 				0707E6591EA2759900402370 /* Main.storyboard in Resources */,
+				07A4C60C1EA28571000A7059 /* CustomView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B374A7DCAEB8E6DFD5E44113 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Space/Pods-Space-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D52287E70E7D5C998966E7E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1BF6A3AF939071B2C8D0A3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Space/Pods-Space-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0707E64C1EA2759900402370 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A4C60E1EA28587000A7059 /* CustomView.swift in Sources */,
 				0707E6561EA2759900402370 /* ViewController.swift in Sources */,
+				07A4C6071EA283F5000A7059 /* iCarousel.m in Sources */,
 				0707E6541EA2759900402370 /* AppDelegate.swift in Sources */,
 				0707E65C1EA2759900402370 /* Space.xcdatamodeld in Sources */,
 			);
@@ -265,26 +385,35 @@
 		};
 		0707E6661EA2759900402370 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43438DC4020716C1B1045A19 /* Pods-Space.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6B89WP5H2R;
 				INFOPLIST_FILE = Space/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MYC.Space;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Space/Space-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		0707E6671EA2759900402370 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6204A2442751D9ED9F92ED76 /* Pods-Space.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6B89WP5H2R;
 				INFOPLIST_FILE = Space/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MYC.Space;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Space/Space-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -308,6 +437,7 @@
 				0707E6671EA2759900402370 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
