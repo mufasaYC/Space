@@ -19,6 +19,24 @@
 		07A4C6071EA283F5000A7059 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A4C6061EA283F5000A7059 /* iCarousel.m */; };
 		07A4C60C1EA28571000A7059 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A4C60A1EA28571000A7059 /* CustomView.xib */; };
 		07A4C60E1EA28587000A7059 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A4C60D1EA28587000A7059 /* CustomView.swift */; };
+		07C61DC61EA2C8FB006A679B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DC51EA2C8FB006A679B /* Constants.swift */; };
+		07C61DC81EA2DF16006A679B /* HospitalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DC71EA2DF16006A679B /* HospitalCell.swift */; };
+		07C61DCA1EA31582006A679B /* WhyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DC91EA31582006A679B /* WhyCell.swift */; };
+		07C61DD31EA31AAD006A679B /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DCB1EA31AAD006A679B /* QRCodeReader.swift */; };
+		07C61DD41EA31AAD006A679B /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DCC1EA31AAD006A679B /* QRCodeReaderResult.swift */; };
+		07C61DD51EA31AAD006A679B /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DCD1EA31AAD006A679B /* QRCodeReaderView.swift */; };
+		07C61DD61EA31AAD006A679B /* QRCodeReaderViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DCE1EA31AAD006A679B /* QRCodeReaderViewContainer.swift */; };
+		07C61DD71EA31AAD006A679B /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DCF1EA31AAD006A679B /* QRCodeReaderViewController.swift */; };
+		07C61DD81EA31AAD006A679B /* QRCodeReaderViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DD01EA31AAD006A679B /* QRCodeReaderViewControllerBuilder.swift */; };
+		07C61DD91EA31AAD006A679B /* QRCodeReaderViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DD11EA31AAD006A679B /* QRCodeReaderViewControllerDelegate.swift */; };
+		07C61DDA1EA31AAD006A679B /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DD21EA31AAD006A679B /* XMLParser.swift */; };
+		07C61DDD1EA31B0B006A679B /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DDC1EA31B0B006A679B /* QRScanViewController.swift */; };
+		07C61DDF1EA31D90006A679B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07C61DDE1EA31D90006A679B /* GoogleService-Info.plist */; };
+		07C61DE31EA31E88006A679B /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DE01EA31E88006A679B /* ReaderOverlayView.swift */; };
+		07C61DE41EA31E88006A679B /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DE11EA31E88006A679B /* SwitchCameraButton.swift */; };
+		07C61DE51EA31E88006A679B /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DE21EA31E88006A679B /* ToggleTorchButton.swift */; };
+		07C61DE71EA3270F006A679B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DE61EA3270F006A679B /* LoginViewController.swift */; };
+		07C61DE91EA3278D006A679B /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DE81EA3278D006A679B /* ChatCell.swift */; };
 		DAF5CAB53244AEAC2FEE2931 /* Pods_Space.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B01033259B8DA3CA41877BD /* Pods_Space.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +57,24 @@
 		07A4C6061EA283F5000A7059 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		07A4C60A1EA28571000A7059 /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 		07A4C60D1EA28587000A7059 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		07C61DC51EA2C8FB006A679B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		07C61DC71EA2DF16006A679B /* HospitalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalCell.swift; sourceTree = "<group>"; };
+		07C61DC91EA31582006A679B /* WhyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyCell.swift; sourceTree = "<group>"; };
+		07C61DCB1EA31AAD006A679B /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
+		07C61DCC1EA31AAD006A679B /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderResult.swift; sourceTree = "<group>"; };
+		07C61DCD1EA31AAD006A679B /* QRCodeReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
+		07C61DCE1EA31AAD006A679B /* QRCodeReaderViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewContainer.swift; sourceTree = "<group>"; };
+		07C61DCF1EA31AAD006A679B /* QRCodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewController.swift; sourceTree = "<group>"; };
+		07C61DD01EA31AAD006A679B /* QRCodeReaderViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerBuilder.swift; sourceTree = "<group>"; };
+		07C61DD11EA31AAD006A679B /* QRCodeReaderViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerDelegate.swift; sourceTree = "<group>"; };
+		07C61DD21EA31AAD006A679B /* XMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
+		07C61DDC1EA31B0B006A679B /* QRScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
+		07C61DDE1EA31D90006A679B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		07C61DE01EA31E88006A679B /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
+		07C61DE11EA31E88006A679B /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
+		07C61DE21EA31E88006A679B /* ToggleTorchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleTorchButton.swift; sourceTree = "<group>"; };
+		07C61DE61EA3270F006A679B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		07C61DE81EA3278D006A679B /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		43438DC4020716C1B1045A19 /* Pods-Space.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Space/Pods-Space.debug.xcconfig"; sourceTree = "<group>"; };
 		6204A2442751D9ED9F92ED76 /* Pods-Space.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space.release.xcconfig"; path = "Pods/Target Support Files/Pods-Space/Pods-Space.release.xcconfig"; sourceTree = "<group>"; };
 		7B01033259B8DA3CA41877BD /* Pods_Space.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Space.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +124,15 @@
 				07A4C6001EA279A5000A7059 /* Fonts */,
 				07A4C60A1EA28571000A7059 /* CustomView.xib */,
 				07A4C60D1EA28587000A7059 /* CustomView.swift */,
+				07C61DC51EA2C8FB006A679B /* Constants.swift */,
+				07C61DC71EA2DF16006A679B /* HospitalCell.swift */,
+				07C61DC91EA31582006A679B /* WhyCell.swift */,
+				07C61DDB1EA31AB3006A679B /* QR Code */,
+				07C61DDC1EA31B0B006A679B /* QRScanViewController.swift */,
+				07C61DD21EA31AAD006A679B /* XMLParser.swift */,
+				07C61DDE1EA31D90006A679B /* GoogleService-Info.plist */,
+				07C61DE61EA3270F006A679B /* LoginViewController.swift */,
+				07C61DE81EA3278D006A679B /* ChatCell.swift */,
 			);
 			path = Space;
 			sourceTree = "<group>";
@@ -110,6 +155,23 @@
 				07A4C6041EA283F4000A7059 /* Space-Bridging-Header.h */,
 			);
 			name = iCarousel;
+			sourceTree = "<group>";
+		};
+		07C61DDB1EA31AB3006A679B /* QR Code */ = {
+			isa = PBXGroup;
+			children = (
+				07C61DE01EA31E88006A679B /* ReaderOverlayView.swift */,
+				07C61DE11EA31E88006A679B /* SwitchCameraButton.swift */,
+				07C61DE21EA31E88006A679B /* ToggleTorchButton.swift */,
+				07C61DCB1EA31AAD006A679B /* QRCodeReader.swift */,
+				07C61DCC1EA31AAD006A679B /* QRCodeReaderResult.swift */,
+				07C61DCD1EA31AAD006A679B /* QRCodeReaderView.swift */,
+				07C61DCE1EA31AAD006A679B /* QRCodeReaderViewContainer.swift */,
+				07C61DCF1EA31AAD006A679B /* QRCodeReaderViewController.swift */,
+				07C61DD01EA31AAD006A679B /* QRCodeReaderViewControllerBuilder.swift */,
+				07C61DD11EA31AAD006A679B /* QRCodeReaderViewControllerDelegate.swift */,
+			);
+			name = "QR Code";
 			sourceTree = "<group>";
 		};
 		1372397079EA08B6B0AAB91A /* Pods */ = {
@@ -194,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07A4C6011EA279B9000A7059 /* SF-UI-Display-Medium.otf in Resources */,
+				07C61DDF1EA31D90006A679B /* GoogleService-Info.plist in Resources */,
 				07A4C6021EA279B9000A7059 /* SF-UI-Display-Regular.otf in Resources */,
 				07A4C6031EA279B9000A7059 /* SF-UI-Display-Thin.otf in Resources */,
 				0707E6611EA2759900402370 /* LaunchScreen.storyboard in Resources */,
@@ -258,11 +321,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C61DE71EA3270F006A679B /* LoginViewController.swift in Sources */,
+				07C61DE51EA31E88006A679B /* ToggleTorchButton.swift in Sources */,
+				07C61DE31EA31E88006A679B /* ReaderOverlayView.swift in Sources */,
+				07C61DCA1EA31582006A679B /* WhyCell.swift in Sources */,
+				07C61DD31EA31AAD006A679B /* QRCodeReader.swift in Sources */,
 				07A4C60E1EA28587000A7059 /* CustomView.swift in Sources */,
+				07C61DD71EA31AAD006A679B /* QRCodeReaderViewController.swift in Sources */,
+				07C61DD91EA31AAD006A679B /* QRCodeReaderViewControllerDelegate.swift in Sources */,
 				0707E6561EA2759900402370 /* ViewController.swift in Sources */,
 				07A4C6071EA283F5000A7059 /* iCarousel.m in Sources */,
+				07C61DD61EA31AAD006A679B /* QRCodeReaderViewContainer.swift in Sources */,
+				07C61DDA1EA31AAD006A679B /* XMLParser.swift in Sources */,
+				07C61DE41EA31E88006A679B /* SwitchCameraButton.swift in Sources */,
+				07C61DE91EA3278D006A679B /* ChatCell.swift in Sources */,
+				07C61DD81EA31AAD006A679B /* QRCodeReaderViewControllerBuilder.swift in Sources */,
+				07C61DD41EA31AAD006A679B /* QRCodeReaderResult.swift in Sources */,
 				0707E6541EA2759900402370 /* AppDelegate.swift in Sources */,
+				07C61DDD1EA31B0B006A679B /* QRScanViewController.swift in Sources */,
 				0707E65C1EA2759900402370 /* Space.xcdatamodeld in Sources */,
+				07C61DC81EA2DF16006A679B /* HospitalCell.swift in Sources */,
+				07C61DD51EA31AAD006A679B /* QRCodeReaderView.swift in Sources */,
+				07C61DC61EA2C8FB006A679B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
