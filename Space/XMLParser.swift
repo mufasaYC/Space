@@ -101,7 +101,14 @@ extension MyParser: XMLParserDelegate {
             print("\n\n\n\n")
         })
 		
-		FIRDatabase.database().reference().child("users").child(attributeDict["uid"]!).child("vaccine").updateChildValues(status)
+		FIRDatabase.database().reference().child("users").child(attributeDict["uid"]!).child("vaccine").observeSingleEvent(of: .value, with: {snapshot in
+			if snapshot.exists() {
+			} else {
+				FIRDatabase.database().reference().child("users").child(attributeDict["uid"]!).child("vaccine").updateChildValues(status)
+			}
+		
+		})
+		
 		FIRDatabase.database().reference().child("mapping").child(attributeDict["pc"]!).updateChildValues([attributeDict["uid"]!:true])
     }
 }

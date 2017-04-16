@@ -156,7 +156,7 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
 		tableView.insertRows(at: [indexPath], with: .left)
 		tableView.endUpdates()
 		tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
-		DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5), execute: {
+		DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
 			print("PERFORM SEGUE")
 			if self.usersBtn.isHidden == false {
 				self.performSegue(withIdentifier: "show", sender: self)

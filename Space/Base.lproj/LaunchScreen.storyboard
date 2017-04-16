@@ -6,11 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="SF-UI-Display-Thin.otf">
-            <string>SFUIDisplay-Thin</string>
+        <array key="SF-UI-Display-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -26,17 +30,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPACE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mio-4I-FNe">
-                                <rect key="frame" x="88.5" y="291" width="199.5" height="86"/>
-                                <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="72"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHW-M0-ekE">
+                                <rect key="frame" x="29" y="302" width="316" height="63.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mio-4I-FNe">
+                                        <rect key="frame" x="0.0" y="0.0" width="154.5" height="63.5"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="53"/>
+                                        <color key="textColor" red="1" green="0.10104709200000001" blue="0.27435980900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Square" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08M-Pu-mWf">
+                                        <rect key="frame" x="154.5" y="0.0" width="161.5" height="63.5"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="53"/>
+                                        <color key="textColor" red="0.19052493572235107" green="0.68427985906600952" blue="0.9959825873374939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NOk-yy-CNG">
+                                <rect key="frame" x="124" y="152.5" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="rKW-BK-rr4"/>
+                                    <constraint firstAttribute="width" secondItem="NOk-yy-CNG" secondAttribute="height" multiplier="1:1" id="xM8-n0-HUz"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.2195931971" green="0.27677485349999997" blue="0.45197838540000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Mio-4I-FNe" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="TsS-tn-SVA"/>
-                            <constraint firstItem="Mio-4I-FNe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="arY-3v-XYF"/>
+                            <constraint firstItem="HHW-M0-ekE" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="AqG-Vy-Gj3"/>
+                            <constraint firstItem="08M-Pu-mWf" firstAttribute="top" secondItem="NOk-yy-CNG" secondAttribute="bottom" constant="21.5" id="cVM-Ds-RnZ"/>
+                            <constraint firstItem="HHW-M0-ekE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="eKb-9d-Nhk"/>
+                            <constraint firstItem="NOk-yy-CNG" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kIR-bs-eb5"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -45,4 +69,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="920" height="934"/>
+    </resources>
 </document>

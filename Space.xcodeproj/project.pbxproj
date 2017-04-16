@@ -81,6 +81,7 @@
 		07C61DEA1EA33A49006A679B /* VaccineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VaccineCell.swift; sourceTree = "<group>"; };
 		07C61DEC1EA33A96006A679B /* DoctorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoctorViewController.swift; path = Assets.xcassets/DoctorViewController.swift; sourceTree = "<group>"; };
 		07C61DEE1EA349D0006A679B /* OthersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OthersViewController.swift; sourceTree = "<group>"; };
+		07C61DF01EA38494006A679B /* Space.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Space.entitlements; sourceTree = "<group>"; };
 		43438DC4020716C1B1045A19 /* Pods-Space.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Space/Pods-Space.debug.xcconfig"; sourceTree = "<group>"; };
 		6204A2442751D9ED9F92ED76 /* Pods-Space.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space.release.xcconfig"; path = "Pods/Target Support Files/Pods-Space/Pods-Space.release.xcconfig"; sourceTree = "<group>"; };
 		7B01033259B8DA3CA41877BD /* Pods_Space.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Space.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +120,7 @@
 		0707E6521EA2759900402370 /* Space */ = {
 			isa = PBXGroup;
 			children = (
+				07C61DF01EA38494006A679B /* Space.entitlements */,
 				0707E6531EA2759900402370 /* AppDelegate.swift */,
 				0707E6551EA2759900402370 /* ViewController.swift */,
 				0707E6571EA2759900402370 /* Main.storyboard */,
@@ -238,6 +240,14 @@
 						DevelopmentTeam = 6B89WP5H2R;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -482,6 +492,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Space/Space.entitlements;
 				DEVELOPMENT_TEAM = 6B89WP5H2R;
 				INFOPLIST_FILE = Space/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -500,6 +511,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Space/Space.entitlements;
 				DEVELOPMENT_TEAM = 6B89WP5H2R;
 				INFOPLIST_FILE = Space/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

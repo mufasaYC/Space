@@ -8,7 +8,7 @@
 
 import Foundation
 
-let status = ["BCG":false,
+var status = ["BCG":false,
               "Oral Polio":false,
               "Hepatitis B":false,
               "Oral Polio - 2":false,
@@ -53,7 +53,7 @@ let age = ["Birth","4 Weeks","8 Weeks","12 Weeks","16 Weeks","6 Months","8-9 Mon
 let hospitals = ["CMC - Christian Medical College"]
 let address = ["IDA Scudder Rd, Vellore, Tamil Nadu 632004"]
 
-let doctors = ["Display your doctor license!","Welcome Dr., Scan patient's Aadhaar.","Okay!","Patient is -NAME-"]
+let doctors = ["I am a doctor.","Scan your patient's Aadhaar card!","Okay!","Patient is -NAME-"]
 let users = ["I am a user!","Scan your Aadhaar.","Okay!","Welcome -NAME- to Health Square."]
 let ngo = ["Kindly provide us with the QRCode sent to you'll and we shall verify you.","Displaying data to help you analyse and take appropriate measures."]
 

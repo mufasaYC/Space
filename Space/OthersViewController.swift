@@ -21,6 +21,9 @@ class OthersViewController: UIViewController {
 
         // Do any additional setup after loading the view.
 		fetchData()
+		for i in pincodeLabel {
+			i.text = ""
+		}
     }
 
 	func fetchData() {

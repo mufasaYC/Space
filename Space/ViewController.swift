@@ -10,10 +10,12 @@ import UIKit
 
 class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource, UITableViewDelegate, UITableViewDataSource {
 
+	@IBOutlet weak var nameLabel: UILabel!
 	@IBOutlet weak var tableView: UITableView!
 	@IBOutlet weak var pageControl: UIPageControl!
 	@IBOutlet weak var bodyCarouselView: iCarousel!
 	@IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
@@ -27,6 +29,8 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource, 
 		//bodyCarouselView.clipsToBounds = true
 		
 		pageControl.numberOfPages = age.count
+		
+		nameLabel.text = userCred["name"]!
 		
 		tableView.delegate = self
 		tableView.dataSource = self
@@ -58,7 +62,6 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource, 
 		if (view == nil) {
 			itemView = CustomView(frame: CGRect(x:0, y:0, width: bodyCarouselView.bounds.width, height: bodyCarouselView.bounds.height))
 			itemView.backgroundImage.image = UIImage(named: age[index])
-			//itemView.backgroundColor = UIColor.darkGray
 			itemView.dateLabel.text = ""
 			for i in vaccines[index][age[index]]! {
 				itemView.dateLabel.text = itemView.dateLabel.text! + "\n\(i)"
@@ -87,8 +90,14 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource, 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		if indexPath.section != tableView.numberOfSections-1 {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "cell_why", for: indexPath) as! WhyCell
-			cell.whyLabel.text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+			if indexPath.row == 0 {
+				cell.whyLabel.text = "This vaccine provides our kid immunity from tubercuosis which is a very important and critical"
 			return cell
+			} else if indexPath.row == 1 {
+				cell.whyLabel.text = "This vaccine fights polio which can cause paralysis and India has achieved 100% eradiction of polio through WHO reports"
+			} else {
+				cell.whyLabel.text = "Fights lifelong liver infections like cirrhosis which causes death at an early phase, if not taken care of and vaccincated appropriately and timely."
+			}
 		}
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HospitalCell
 		cell.intialLabel.text = "\(hospitals[indexPath.row].characters.first!)"
@@ -131,7 +140,7 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource, 
 	func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
 		guard let header = view as? UITableViewHeaderFooterView else { return }
 		if section != tableView.numberOfSections-1 {
-			header.textLabel?.textColor = UIColor(red: 49.0/255.0, green: 174.0/255.0, blue: 254.0/255.0, alpha: 1.0)
+			header.textLabel?.textColor = UIColor(red: 255.0/255.0, green: 26.0/255.0, blue: 70.0/255.0, alpha: 1.0)
 			header.textLabel?.font = UIFont(name: "SF-UI-Display-Regular", size: 18)
 			header.textLabel?.frame = header.frame
 			header.contentView.backgroundColor = UIColor.white
@@ -140,7 +149,7 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource, 
 		header.textLabel?.textColor = UIColor.white
 		header.textLabel?.font = UIFont(name: "SF-UI-Display-Regular", size: 18)
 		header.textLabel?.frame = header.frame
-		header.contentView.backgroundColor = UIColor(red: 49.0/255.0, green: 174.0/255.0, blue: 254.0/255.0, alpha: 1.0)
+		header.contentView.backgroundColor = UIColor(red: 255.0/255.0, green: 26.0/255.0, blue: 70.0/255.0, alpha: 1.0)
 	}
 	
 	func carousel(_ carousel: iCarousel, didSelectItemAt index: Int) {
