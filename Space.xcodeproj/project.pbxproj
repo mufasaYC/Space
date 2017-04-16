@@ -37,6 +37,8 @@
 		07C61DE51EA31E88006A679B /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DE21EA31E88006A679B /* ToggleTorchButton.swift */; };
 		07C61DE71EA3270F006A679B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DE61EA3270F006A679B /* LoginViewController.swift */; };
 		07C61DE91EA3278D006A679B /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DE81EA3278D006A679B /* ChatCell.swift */; };
+		07C61DEB1EA33A49006A679B /* VaccineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DEA1EA33A49006A679B /* VaccineCell.swift */; };
+		07C61DED1EA33A96006A679B /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DEC1EA33A96006A679B /* DoctorViewController.swift */; };
 		DAF5CAB53244AEAC2FEE2931 /* Pods_Space.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B01033259B8DA3CA41877BD /* Pods_Space.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +77,8 @@
 		07C61DE21EA31E88006A679B /* ToggleTorchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleTorchButton.swift; sourceTree = "<group>"; };
 		07C61DE61EA3270F006A679B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		07C61DE81EA3278D006A679B /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		07C61DEA1EA33A49006A679B /* VaccineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VaccineCell.swift; sourceTree = "<group>"; };
+		07C61DEC1EA33A96006A679B /* DoctorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoctorViewController.swift; path = Assets.xcassets/DoctorViewController.swift; sourceTree = "<group>"; };
 		43438DC4020716C1B1045A19 /* Pods-Space.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Space/Pods-Space.debug.xcconfig"; sourceTree = "<group>"; };
 		6204A2442751D9ED9F92ED76 /* Pods-Space.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space.release.xcconfig"; path = "Pods/Target Support Files/Pods-Space/Pods-Space.release.xcconfig"; sourceTree = "<group>"; };
 		7B01033259B8DA3CA41877BD /* Pods_Space.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Space.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +137,8 @@
 				07C61DDE1EA31D90006A679B /* GoogleService-Info.plist */,
 				07C61DE61EA3270F006A679B /* LoginViewController.swift */,
 				07C61DE81EA3278D006A679B /* ChatCell.swift */,
+				07C61DEA1EA33A49006A679B /* VaccineCell.swift */,
+				07C61DEC1EA33A96006A679B /* DoctorViewController.swift */,
 			);
 			path = Space;
 			sourceTree = "<group>";
@@ -334,6 +340,7 @@
 				07C61DD61EA31AAD006A679B /* QRCodeReaderViewContainer.swift in Sources */,
 				07C61DDA1EA31AAD006A679B /* XMLParser.swift in Sources */,
 				07C61DE41EA31E88006A679B /* SwitchCameraButton.swift in Sources */,
+				07C61DEB1EA33A49006A679B /* VaccineCell.swift in Sources */,
 				07C61DE91EA3278D006A679B /* ChatCell.swift in Sources */,
 				07C61DD81EA31AAD006A679B /* QRCodeReaderViewControllerBuilder.swift in Sources */,
 				07C61DD41EA31AAD006A679B /* QRCodeReaderResult.swift in Sources */,
@@ -343,6 +350,7 @@
 				07C61DC81EA2DF16006A679B /* HospitalCell.swift in Sources */,
 				07C61DD51EA31AAD006A679B /* QRCodeReaderView.swift in Sources */,
 				07C61DC61EA2C8FB006A679B /* Constants.swift in Sources */,
+				07C61DED1EA33A96006A679B /* DoctorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

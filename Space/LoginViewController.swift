@@ -69,15 +69,18 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
 	@IBAction func doctor(_ sender: Any) {
 		usersBtn.isHidden = true
 		othersBtn.isHidden = true
-		if count == 3 {
+		if count == 2 {
 			let btn = sender as! UIButton
 			btn.setTitle("Scan Aadhaar", for: .selected)
 			btn.setTitle("Scan Aadhaar", for: .normal)
 		}
-		if count == 4 {
+		if count == 3 {
 			scanAdhaar()
 		}
 		if count == 1 {
+			let btn = sender as! UIButton
+			btn.setTitle("Display License", for: .selected)
+			btn.setTitle("Display License", for: .normal)
 			chatArray.append(contentsOf: doctors)
 		}
 		tableView.beginUpdates()
@@ -124,7 +127,7 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
 			let btn = sender as! UIButton
 			btn.setTitle("", for: .selected)
 			btn.setTitle("", for: .normal)
-			btn.isHidden = true
+			//btn.isHidden = true
 		}
 		if count == 4 {
 			
@@ -155,7 +158,11 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
 		tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
 		DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5), execute: {
 			print("PERFORM SEGUE")
-			self.performSegue(withIdentifier: "show", sender: self)
+			if self.usersBtn.isHidden == false {
+				self.performSegue(withIdentifier: "show", sender: self)
+			} else if self.doctorBtn.isHidden == false {
+				self.performSegue(withIdentifier: "doc", sender: self)
+			}
 			//self.scanAdhaar()
 		})
 	}
@@ -217,5 +224,7 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
 			}
 		}
 	}
+
+	
 	
 }

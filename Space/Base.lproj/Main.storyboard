@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qem-FJ-hTO">
-                                <rect key="frame" x="0.0" y="29" width="375" height="580"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="509"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="bot" rowHeight="95" id="ySl-7J-Wl0" customClass="ChatCell" customModule="Space" customModuleProvider="target">
@@ -131,16 +131,25 @@
                                     <constraint firstItem="jM7-6n-QdU" firstAttribute="width" secondItem="I4U-Hd-ssO" secondAttribute="width" id="a5n-Ef-cTl"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="LhH-W2-lYK">
+                                <rect key="frame" x="12" y="29" width="71" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LhH-W2-lYK" secondAttribute="height" multiplier="1:1" id="0t3-48-6Ym"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="9AH-Gq-FrX" firstAttribute="top" secondItem="ors-XX-z2G" secondAttribute="bottom" constant="16" id="028-9P-QLL"/>
+                            <constraint firstItem="LhH-W2-lYK" firstAttribute="leading" secondItem="xCD-Dx-dLC" secondAttribute="leading" constant="12" id="6vu-bB-XOv"/>
+                            <constraint firstItem="Qem-FJ-hTO" firstAttribute="top" secondItem="LhH-W2-lYK" secondAttribute="bottom" id="J5O-dP-Q18"/>
                             <constraint firstItem="ors-XX-z2G" firstAttribute="top" secondItem="Qem-FJ-hTO" secondAttribute="bottom" constant="8" id="OaX-qD-45i"/>
                             <constraint firstItem="ors-XX-z2G" firstAttribute="leading" secondItem="xCD-Dx-dLC" secondAttribute="leadingMargin" id="VCa-YF-D7N"/>
+                            <constraint firstItem="LhH-W2-lYK" firstAttribute="top" secondItem="xCD-Dx-dLC" secondAttribute="top" constant="29" id="Yib-CD-heA"/>
                             <constraint firstAttribute="trailing" secondItem="Qem-FJ-hTO" secondAttribute="trailing" id="gHQ-EA-tDo"/>
                             <constraint firstItem="Qem-FJ-hTO" firstAttribute="leading" secondItem="xCD-Dx-dLC" secondAttribute="leading" id="gfF-XL-xz4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ors-XX-z2G" secondAttribute="trailing" id="hJc-nd-UCI"/>
-                            <constraint firstItem="Qem-FJ-hTO" firstAttribute="top" secondItem="xCD-Dx-dLC" secondAttribute="top" constant="29" id="umX-dF-IIf"/>
+                            <constraint firstItem="Qem-FJ-hTO" firstAttribute="top" secondItem="xCD-Dx-dLC" secondAttribute="top" constant="100" id="umX-dF-IIf"/>
                         </constraints>
                     </view>
                     <connections>
@@ -149,6 +158,7 @@
                         <outlet property="tableView" destination="Qem-FJ-hTO" id="Sbt-sI-VXV"/>
                         <outlet property="usersBtn" destination="jM7-6n-QdU" id="sFY-B4-9Aa"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="show" id="wHb-2y-c2f"/>
+                        <segue destination="5gQ-2W-FL1" kind="show" identifier="doc" id="8vt-8v-5a9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CRG-Qg-chk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -192,9 +202,6 @@
                                                     <constraint firstAttribute="width" secondItem="Tcd-cu-hss" secondAttribute="height" multiplier="1:1" id="G2J-1Z-PsK"/>
                                                 </constraints>
                                                 <state key="normal" backgroundImage="Info"/>
-                                                <connections>
-                                                    <segue destination="5gQ-2W-FL1" kind="show" id="dtg-WP-afZ"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hm2-G6-ZQH">
                                                 <rect key="frame" x="33" y="0.0" width="25" height="25"/>
@@ -355,10 +362,10 @@
             </objects>
             <point key="canvasLocation" x="124" y="38.23088455772114"/>
         </scene>
-        <!--View Controller-->
+        <!--Doctor View Controller-->
         <scene sceneID="opn-bc-W53">
             <objects>
-                <viewController id="5gQ-2W-FL1" sceneMemberID="viewController">
+                <viewController id="5gQ-2W-FL1" customClass="DoctorViewController" customModule="Space" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rhB-8p-IMB"/>
                         <viewControllerLayoutGuide type="bottom" id="rA7-kk-Tg6"/>
@@ -366,12 +373,72 @@
                     <view key="view" contentMode="scaleToFill" id="GMU-yv-11I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="47" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Eyo-iq-sHo">
+                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="cell" rowHeight="64" id="fhP-zY-Gbh" customClass="VaccineCell" customModule="Space" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fhP-zY-Gbh" id="UzV-eu-7to">
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="63.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acJ-KY-MCM">
+                                                    <rect key="frame" x="20" y="16" width="300" height="31.5"/>
+                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="acJ-KY-MCM" firstAttribute="top" secondItem="UzV-eu-7to" secondAttribute="topMargin" constant="8" id="ShB-H8-ZYQ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="acJ-KY-MCM" secondAttribute="bottom" constant="8" id="hoF-jw-fMM"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="acJ-KY-MCM" secondAttribute="trailing" constant="8" id="oPT-xZ-WMb"/>
+                                                <constraint firstItem="acJ-KY-MCM" firstAttribute="leading" secondItem="UzV-eu-7to" secondAttribute="leadingMargin" constant="12" id="r5B-7V-Txh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="vaccineLabel" destination="acJ-KY-MCM" id="GC0-zW-tvI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="M0C-3B-FFx">
+                                <rect key="frame" x="16" y="28" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="M0C-3B-FFx" secondAttribute="height" multiplier="1:1" id="1lv-89-C0a"/>
+                                    <constraint firstAttribute="height" constant="72" id="KON-XF-BUT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8f-JO-JQd">
+                                <rect key="frame" x="100" y="43" width="78" height="42"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Eyo-iq-sHo" firstAttribute="leading" secondItem="GMU-yv-11I" secondAttribute="leading" id="83m-Pr-Q1x"/>
+                            <constraint firstItem="rA7-kk-Tg6" firstAttribute="top" secondItem="Eyo-iq-sHo" secondAttribute="bottom" id="8On-rA-pC1"/>
+                            <constraint firstItem="M0C-3B-FFx" firstAttribute="top" secondItem="rhB-8p-IMB" secondAttribute="bottom" constant="8" id="8Zz-Fh-KU6"/>
+                            <constraint firstItem="M0C-3B-FFx" firstAttribute="leading" secondItem="GMU-yv-11I" secondAttribute="leadingMargin" id="C7N-0O-3jI"/>
+                            <constraint firstItem="n8f-JO-JQd" firstAttribute="leading" secondItem="M0C-3B-FFx" secondAttribute="trailing" constant="12" id="TE0-l9-iNz"/>
+                            <constraint firstItem="n8f-JO-JQd" firstAttribute="centerY" secondItem="M0C-3B-FFx" secondAttribute="centerY" id="ppx-KS-dVN"/>
+                            <constraint firstItem="Eyo-iq-sHo" firstAttribute="top" secondItem="M0C-3B-FFx" secondAttribute="bottom" id="s45-oV-9rK"/>
+                            <constraint firstAttribute="trailing" secondItem="Eyo-iq-sHo" secondAttribute="trailing" id="wiJ-uT-a8R"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="n8f-JO-JQd" id="ynH-zk-3l7"/>
+                        <outlet property="tableView" destination="Eyo-iq-sHo" id="NpE-6X-M5M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kvv-6j-bcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124" y="747"/>
+            <point key="canvasLocation" x="124" y="745.27736131934034"/>
         </scene>
         <!--Scan View Controller-->
         <scene sceneID="MsN-Dc-vDD">
@@ -395,5 +462,6 @@
     <resources>
         <image name="Info" width="50" height="50"/>
         <image name="Profile" width="50" height="50"/>
+        <image name="logo" width="920" height="934"/>
     </resources>
 </document>
