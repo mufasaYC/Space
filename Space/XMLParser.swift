@@ -93,13 +93,15 @@ extension MyParser: XMLParserDelegate {
         userCred = attributeDict
 		
 		UserDefaults.standard.setValue(attributeDict["uid"]!, forKey: "UID")
+		UserDefaults.standard.setValue(status, forKey: "status")
+		
 		
         FIRDatabase.database().reference().child("users").child(attributeDict["uid"]!).updateChildValues(attributeDict, withCompletionBlock: {err, res in
-			
             print(res)
             print("\n\n\n\n")
-        
         })
+		
+		FIRDatabase.database().reference().child("users").child(attributeDict["uid"]!).child("vaccine").updateChildValues(status)
 		FIRDatabase.database().reference().child("mapping").child(attributeDict["pc"]!).updateChildValues([attributeDict["uid"]!:true])
     }
 }

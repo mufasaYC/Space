@@ -39,6 +39,7 @@
 		07C61DE91EA3278D006A679B /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DE81EA3278D006A679B /* ChatCell.swift */; };
 		07C61DEB1EA33A49006A679B /* VaccineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DEA1EA33A49006A679B /* VaccineCell.swift */; };
 		07C61DED1EA33A96006A679B /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DEC1EA33A96006A679B /* DoctorViewController.swift */; };
+		07C61DEF1EA349D1006A679B /* OthersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C61DEE1EA349D0006A679B /* OthersViewController.swift */; };
 		DAF5CAB53244AEAC2FEE2931 /* Pods_Space.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B01033259B8DA3CA41877BD /* Pods_Space.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		07C61DE81EA3278D006A679B /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		07C61DEA1EA33A49006A679B /* VaccineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VaccineCell.swift; sourceTree = "<group>"; };
 		07C61DEC1EA33A96006A679B /* DoctorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoctorViewController.swift; path = Assets.xcassets/DoctorViewController.swift; sourceTree = "<group>"; };
+		07C61DEE1EA349D0006A679B /* OthersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OthersViewController.swift; sourceTree = "<group>"; };
 		43438DC4020716C1B1045A19 /* Pods-Space.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Space/Pods-Space.debug.xcconfig"; sourceTree = "<group>"; };
 		6204A2442751D9ED9F92ED76 /* Pods-Space.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space.release.xcconfig"; path = "Pods/Target Support Files/Pods-Space/Pods-Space.release.xcconfig"; sourceTree = "<group>"; };
 		7B01033259B8DA3CA41877BD /* Pods_Space.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Space.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 				07C61DE81EA3278D006A679B /* ChatCell.swift */,
 				07C61DEA1EA33A49006A679B /* VaccineCell.swift */,
 				07C61DEC1EA33A96006A679B /* DoctorViewController.swift */,
+				07C61DEE1EA349D0006A679B /* OthersViewController.swift */,
 			);
 			path = Space;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C61DEF1EA349D1006A679B /* OthersViewController.swift in Sources */,
 				07C61DE71EA3270F006A679B /* LoginViewController.swift in Sources */,
 				07C61DE51EA31E88006A679B /* ToggleTorchButton.swift in Sources */,
 				07C61DE31EA31E88006A679B /* ReaderOverlayView.swift in Sources */,
